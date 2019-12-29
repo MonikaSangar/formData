@@ -7,8 +7,7 @@ app.set('port', process.env.PORT || 8000);
 var port = app.get('port');
 
 app.get('/', function(req, res){
-res.status(200);
-res.send("hellow");//sendFile(path.join(__dirname, "public", "index.html"));
+res.status(200).sendFile(path.join(__dirname, "public", "index.html"));
 
 });
 
