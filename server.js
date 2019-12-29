@@ -6,7 +6,8 @@ var fs = require('fs');
 const port = process.env.port || 8000;
 
 app.get('/', function(req, res){
-res.status(200).sendFile(path.join(__dirname, "public", "index.html"));
+res.status(200);
+res.send("hellow");//sendFile(path.join(__dirname, "public", "index.html"));
 
 });
 
